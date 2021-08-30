@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.anisimova.hoody.Type5">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="10:11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/smoke">
+
+
+        <ImageView
+            android:id="@+id/sleeveLeft"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/sleeveleft1"
+            app:layout_constraintHeight_percent="0.8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5"></ImageView>
+
+        <ImageView
+            android:id="@+id/sleeveLeftTop"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/sleevelefttopforline"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5"></ImageView>
+
+        <ImageView
+            android:id="@+id/sleeveLeftLine"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/sleeveleftline"
+            app:layout_constraintBottom_toBottomOf="@+id/sleeveLeftTop"
+            app:layout_constraintHeight_percent="0.125"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent="0.5"></ImageView>
+
+        <ImageView
+            android:id="@+id/sleeveRight"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/sleeveright1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.8"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5"></ImageView>
+
+        <ImageView
+            android:id="@+id/sleeveRightTop"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/sleeverighttopforline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5"></ImageView>
+
+
+        <ImageView
+            android:id="@+id/sleeveRightLine"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/sleeverightline"
+            app:layout_constraintBottom_toBottomOf="@+id/sleeveRightTop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.125"
+            app:layout_constraintWidth_percent="0.5"></ImageView>
+
+        <ImageView
+            android:id="@+id/body"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/body1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5"></ImageView>
+
+        <ImageView
+            android:id="@+id/bodyTop"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bodytopforline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.55"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5"></ImageView>
+
+        <ImageView
+            android:id="@+id/bodyLine"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bodyline"
+            app:layout_constraintBottom_toBottomOf="@+id/bodyTop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent="0.5"></ImageView>
+
+        <ImageView
+            android:id="@+id/hoodRight"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/hoodleft1"
+            app:layout_constraintHeight_percent="0.23"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5"></ImageView>
+
+        <ImageView
+            android:id="@+id/hoodLeft"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/hoodright1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.23"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5"></ImageView>
+
+        <ImageView
+            android:id="@+id/sleeveRightBottom"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/sleeveleftbottom1"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sleeveRight"
+            app:layout_constraintWidth_percent="0.25"></ImageView>
+
+        <ImageView
+            android:id="@+id/bodyBottom"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bodybottom1"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintStart_toEndOf="@+id/sleeveRightBottom"
+            app:layout_constraintTop_toBottomOf="@+id/body"
+            app:layout_constraintWidth_percent="0.5"></ImageView>
+
+        <ImageView
+            android:id="@+id/sleeveLeftBottom"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/sleeverightbottom1"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintStart_toEndOf="@+id/bodyBottom"
+            app:layout_constraintTop_toBottomOf="@+id/sleeveLeft"
+            app:layout_constraintWidth_percent="0.25"></ImageView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/clear_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="4dp"
+        android:src="@drawable/clear_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    <ImageView
+        android:id="@+id/save_btn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/save_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/gradient_palette"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
