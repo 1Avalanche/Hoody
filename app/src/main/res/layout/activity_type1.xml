@@ -4,18 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.anisimova.hoody.Type1">
+    tools:context="com.anisimova.hoody.Type1"
+    android:background="@color/smoke">
 <!--    android:background="@drawable/texture_textile">-->
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout_image"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:background="@color/smoke"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_container"
         app:layout_constraintDimensionRatio="10:11"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/smoke">
-
+        app:layout_constraintTop_toTopOf="parent">
 
 
         <ImageView
@@ -136,6 +137,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:background="@drawable/gradient_palette"/>
+        android:background="@drawable/gradient_palette"
+        android:paddingBottom="8dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

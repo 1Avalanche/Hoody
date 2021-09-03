@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.anisimova.hoody.Type2">
+    tools:context="com.anisimova.hoody.Type2"
+    android:background="@color/smoke">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout_image"
@@ -13,6 +14,7 @@
         app:layout_constraintDimensionRatio="10:11"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_container"
         android:background="@color/smoke">
 
 
@@ -151,6 +153,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:background="@drawable/gradient_palette"/>
+        android:background="@drawable/gradient_palette"
+        android:paddingBottom="8dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
