@@ -1,12 +1,15 @@
 <resources>
-    <string name="app_name">Hoody</string>
-    <string name="button_text">" "</string>
-    <string name="folder_name">Hoody Design </string>
+    <string name="app_name">ImagineHoody</string>
+    <string name="button_text" translatable="false">" "</string>
+    <string name="folder_name" translatable="false">Imagine Hoody</string>
+    <string name="toast_save">Your hoody was saved into your gallery</string>
     <string name="to_type_1">Open new hoody: type 1, simple</string>
     <string name="to_type_2">Open new hoody: type 2, with pocket </string>
     <string name="to_type_3">Open new hoody: type 3, with horizontal color dividing </string>
     <string name="to_type_4">Open new hoody: type 4, with small chest pocket </string>
     <string name="to_type_5">Open new hoody: type 5, with line across the body and sleeves </string>
-    <string name="to_type_6">Open new hoody: type 6, with diagonal body dividing </string>
+    <string name="to_type_6">Open new hoody: type 5, with diagonal dividing </string>
+    <string name="to_type_7">Open new hoody: type 7, with alternative sleeves </string>
+    <string name="to_type_8">Open new hoody: type 8, with with alternative sleeves and diagonal line </string>
     <string name="main_layout_desc">Screen with different type of hoodies. Scroll the screen down to see more hoodies. </string>
 </resources>

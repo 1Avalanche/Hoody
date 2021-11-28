@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ImagineHoody</string>
+    <string name="toast_save">Худи сохранена в галерею</string>
+    <string name="to_type_1">Откруть новую худи: тип простой</string>
+    <string name="to_type_2">Открыть новую худи: тип с карманом</string>
+    <string name="to_type_3">Открыть новую худи: тип с горизонтальным разделителем</string>
+    <string name="to_type_4">Открыть новую худи: с маленьким карманом на груди</string>
+    <string name="to_type_5">Открыть новую худи: тип с полосой</string>
+    <string name="to_type_7">Открыть новую худи: тип c альтернативным кроем рукавов</string>
+    <string name="to_type_8">Открыть новую худи: тип с ассиметричной полосой посередине</string>
+    <string name="to_type_6">Открыть новую худи: тип с диагональным разделением туловища</string>
+    <string name="main_layout_desc">Экран с разными типами худи. Листайте вниз, чтобы увидеть больше.</string>
+</resources>

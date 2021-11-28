@@ -4,19 +4,40 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android/PROJECTS/Hoody/app/src/main/res/drawable/gradient_palette.xml" value="0.1648148148148148" />
+        <entry key="..\:/Android/PROJECTS/Hoody/app/src/main/res/drawable/main_ic_background.xml" value="0.10902777777777778" />
+        <entry key="..\:/Android/PROJECTS/Hoody/app/src/main/res/drawable/main_ic_foreground.xml" value="0.10902777777777778" />
         <entry key="..\:/Android/PROJECTS/Hoody/app/src/main/res/drawable/type1_ic.xml" value="0.1648148148148148" />
         <entry key="..\:/Android/PROJECTS/Hoody/app/src/main/res/drawable/type2_ic.xml" value="0.1648148148148148" />
         <entry key="..\:/Android/PROJECTS/Hoody/app/src/main/res/drawable/type3_ic.xml" value="0.1648148148148148" />
         <entry key="..\:/Android/PROJECTS/Hoody/app/src/main/res/drawable/type4_ic.xml" value="0.1648148148148148" />
         <entry key="..\:/Android/PROJECTS/Hoody/app/src/main/res/drawable/type5_ic.xml" value="0.1648148148148148" />
         <entry key="..\:/Android/PROJECTS/Hoody/app/src/main/res/drawable/type6_ic.xml" value="0.1648148148148148" />
+        <entry key="..\:/Android/PROJECTS/Hoody/app/src/main/res/drawable/type7_ic.xml" value="0.10902777777777778" />
         <entry key="..\:/Android/PROJECTS/Hoody/app/src/main/res/layout/activity_main.xml" value="0.17" />
-        <entry key="..\:/Android/PROJECTS/Hoody/app/src/main/res/layout/activity_type1.xml" value="0.25679347826086957" />
+        <entry key="..\:/Android/PROJECTS/Hoody/app/src/main/res/layout/activity_type1.xml" value="0.2" />
+        <entry key="..\:/Android/PROJECTS/Hoody/app/src/main/res/layout/activity_type2.xml" value="0.16188524590163936" />
         <entry key="..\:/Android/PROJECTS/Hoody/app/src/main/res/layout/activity_type3.xml" value="0.24864130434782608" />
         <entry key="..\:/Android/PROJECTS/Hoody/app/src/main/res/layout/activity_type5.xml" value="0.24864130434782608" />
         <entry key="..\:/Android/PROJECTS/Hoody/app/src/main/res/layout/activity_type6.xml" value="0.24864130434782608" />
+        <entry key="..\:/Android/PROJECTS/Hoody/app/src/main/res/layout/activity_type7.xml" value="0.15812841530054644" />
+        <entry key="..\:/Android/PROJECTS/Hoody/app/src/main/res/layout/activity_type8.xml" value="0.12" />
         <entry key="..\:/Android/PROJECTS/Hoody/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.15925925925925927" />
         <entry key="..\:/Android/PROJECTS/Hoody/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.15925925925925927" />
+        <entry key="..\:/Users/Anastasiya/StudioProjects/Hoody/app/src/main/res/layout/activity_main.xml" value="0.13524590163934427" />
+        <entry key="..\:/Users/Anastasiya/StudioProjects/Hoody/app/src/main/res/layout/activity_type1.xml" value="0.18203551912568305" />
+        <entry key="..\:/Users/Anastasiya/StudioProjects/Hoody/app/src/main/res/layout/activity_type2.xml" value="0.11200000000000002" />
+        <entry key="..\:/Users/Anastasiya/StudioProjects/Hoody/app/src/main/res/layout/activity_type7.xml" value="0.176" />
+        <entry key="..\:/Users/Anastasiya/StudioProjects/Hoody/app/src/main/res/layout/fragment_buttons_palette.xml" value="0.139453125" />
+        <entry key="..\:/Users/Anastasiya/StudioProjects/Hoody/app/src/main/res/layout/fragment_main.xml" value="0.12" />
+        <entry key="..\:/Users/Anastasiya/StudioProjects/Hoody/app/src/main/res/layout/fragment_type1.xml" value="0.15546875" />
+        <entry key="..\:/Users/Anastasiya/StudioProjects/Hoody/app/src/main/res/layout/fragment_type2.xml" value="0.15" />
+        <entry key="..\:/Users/Anastasiya/StudioProjects/Hoody/app/src/main/res/layout/fragment_type3.xml" value="0.15546875" />
+        <entry key="..\:/Users/Anastasiya/StudioProjects/Hoody/app/src/main/res/layout/fragment_type4.xml" value="0.15546875" />
+        <entry key="..\:/Users/Anastasiya/StudioProjects/Hoody/app/src/main/res/layout/fragment_type5.xml" value="0.15546875" />
+        <entry key="..\:/Users/Anastasiya/StudioProjects/Hoody/app/src/main/res/layout/fragment_type6.xml" value="0.15546875" />
+        <entry key="..\:/Users/Anastasiya/StudioProjects/Hoody/app/src/main/res/layout/fragment_type7.xml" value="0.15546875" />
+        <entry key="..\:/Users/Anastasiya/StudioProjects/Hoody/app/src/main/res/layout/item_color_button.xml" value="0.144140625" />
+        <entry key="..\:/Users/Anastasiya/StudioProjects/Hoody/app/src/main/res/layout/layout_type1.xml" value="0.18203551912568305" />
       </map>
     </option>
   </component>

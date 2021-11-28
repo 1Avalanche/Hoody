@@ -11,22 +11,31 @@
         android:roundIcon="@mipmap/main_ic_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hoody">
-        <activity android:name="com.anisimova.hoody.Type6"
-            android:screenOrientation="portrait"></activity>
-        <activity android:name="com.anisimova.hoody.Type5"
-            android:screenOrientation="portrait"/>
-        <activity android:name="com.anisimova.hoody.Type4"
-            android:screenOrientation="portrait"/>
         <activity
-            android:name="com.anisimova.hoody.Type1"
-            android:screenOrientation="portrait" />
-        <activity android:name="com.anisimova.hoody.Type3"
-            android:screenOrientation="portrait"/>
+            android:name="com.anisimova.hoody.ui.Type8"
+            android:exported="true" />
         <activity
-            android:name="com.anisimova.hoody.Type2"
+            android:name="com.anisimova.hoody.ui.Type7"
+            android:exported="true" />
+        <activity
+            android:name="com.anisimova.hoody.ui.Type6"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.anisimova.hoody.MainActivity">
+            android:name="com.anisimova.hoody.ui.Type5"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.anisimova.hoody.ui.Type4"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.anisimova.hoody.ui.Type1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.anisimova.hoody.ui.Type3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.anisimova.hoody.ui.Type2"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.anisimova.hoody.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
