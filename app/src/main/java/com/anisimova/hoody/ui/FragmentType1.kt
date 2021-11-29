@@ -10,12 +10,11 @@ import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
-import androidx.core.view.ViewCompat
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.transition.TransitionInflater
 import com.example.hoody.R
 
 class FragmentType1 : Fragment(), Callbacks {
@@ -28,8 +27,14 @@ class FragmentType1 : Fragment(), Callbacks {
     private lateinit var bottomSleeveRight: ImageView
     private lateinit var bottomBody: ImageView
     private lateinit var bottomSleeveLeft: ImageView
+    private lateinit var pocket: ImageView
+    private lateinit var pocketSmall: ImageView
     private lateinit var clearButton: ImageView
     private lateinit var saveButton: ImageView
+    private lateinit var bigPocketShow: ImageView
+    private lateinit var smallPocketShow: ImageView
+    private lateinit var bigOk: ImageView
+    private lateinit var smallOk: ImageView
     lateinit var fullHoody: ConstraintLayout
     private lateinit var paletteRecyclerView: RecyclerView
 
@@ -76,6 +81,8 @@ class FragmentType1 : Fragment(), Callbacks {
         bottomSleeveRight = view.findViewById(R.id.sleeveRightBottom)
         bottomBody = view.findViewById(R.id.bodyBottom)
         bottomSleeveLeft = view.findViewById(R.id.sleeveLeftBottom)
+        pocket = view.findViewById(R.id.pocket)
+        pocketSmall = view.findViewById(R.id.pocket_small)
         var partList: MutableList<View> = mutableListOf(
             hoodRight,
             hoodLeft,
@@ -84,7 +91,9 @@ class FragmentType1 : Fragment(), Callbacks {
             body,
             bottomSleeveRight,
             bottomSleeveLeft,
-            bottomBody)
+            bottomBody,
+            pocket,
+            pocketSmall)
         viewModel.loadParts(partList)
 
         //работа кнопки очистить
@@ -96,6 +105,43 @@ class FragmentType1 : Fragment(), Callbacks {
         //работа кнопки сохранить
         saveButton = view.findViewById(R.id.save_btn)
         fullHoody = view.findViewById<ConstraintLayout>(R.id.layout_image)
+
+        //работа кнопок - добавления карманов
+        bigPocketShow = view.findViewById(R.id.pocket_big_btn)
+        bigOk = view.findViewById(R.id.pocket_big_ok)
+        bigPocketShow.setOnClickListener {
+            viewModel.showBigPocket()
+        }
+
+        smallOk = view.findViewById(R.id.pocket_small_ok)
+        smallPocketShow = view.findViewById(R.id.pocket_small_btn)
+        smallPocketShow.setOnClickListener {
+            viewModel.showSmallPocket()
+        }
+
+        viewModel.isBigPocketShow.observe(viewLifecycleOwner, Observer {
+            if(it) {
+                pocket.visibility = View.VISIBLE
+                bigOk.visibility = View.VISIBLE
+            }
+            if (!it) {
+                pocket.visibility = View.GONE
+                bigOk.visibility = View.GONE
+            }
+        })
+
+        viewModel.isSmallPocketShow.observe(viewLifecycleOwner, Observer {
+            if(it) {
+                pocketSmall.visibility = View.VISIBLE
+                smallOk.visibility = View.VISIBLE
+            }
+            if (!it) {
+                pocketSmall.visibility = View.GONE
+                smallOk.visibility = View.GONE
+            }
+        })
+
+
 
         saveButton.setOnClickListener {
             //запрос разрешения

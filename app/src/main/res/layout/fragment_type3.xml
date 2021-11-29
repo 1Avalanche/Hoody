@@ -27,7 +27,7 @@
             app:layout_constraintHeight_percent="0.8"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintWidth_percent="0.5"></ImageView>
+            app:layout_constraintWidth_percent="0.5"/>
 
         <ImageView
             android:id="@+id/sleeveLeftTop"
@@ -38,7 +38,7 @@
             app:layout_constraintHeight_percent="0.55"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintWidth_percent="0.5"></ImageView>
+            app:layout_constraintWidth_percent="0.5"/>
 
         <ImageView
             android:id="@+id/sleeveRight"
@@ -49,7 +49,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight_percent="0.8"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintWidth_percent="0.5"></ImageView>
+            app:layout_constraintWidth_percent="0.5"/>
 
         <ImageView
             android:id="@+id/sleeveRightTop"
@@ -60,7 +60,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight_percent="0.55"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintWidth_percent="0.5"></ImageView>
+            app:layout_constraintWidth_percent="0.5"/>
 
         <ImageView
             android:id="@+id/body"
@@ -72,7 +72,7 @@
             app:layout_constraintHeight_percent="0.8"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintWidth_percent="0.5"></ImageView>
+            app:layout_constraintWidth_percent="0.5"/>
 
         <ImageView
             android:id="@+id/bodyTop"
@@ -84,7 +84,7 @@
             app:layout_constraintHeight_percent="0.55"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintWidth_percent="0.5"></ImageView>
+            app:layout_constraintWidth_percent="0.5"/>
 
         <ImageView
             android:id="@+id/hoodRight"
@@ -95,7 +95,7 @@
             app:layout_constraintHeight_percent="0.23"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintWidth_percent="0.5"></ImageView>
+            app:layout_constraintWidth_percent="0.5"/>
 
         <ImageView
             android:id="@+id/hoodLeft"
@@ -106,7 +106,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight_percent="0.23"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintWidth_percent="0.5"></ImageView>
+            app:layout_constraintWidth_percent="0.5"/>
 
         <ImageView
             android:id="@+id/sleeveRightBottom"
@@ -117,7 +117,7 @@
             app:layout_constraintHeight_percent="0.2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/sleeveLeft"
-            app:layout_constraintWidth_percent="0.25"></ImageView>
+            app:layout_constraintWidth_percent="0.25"/>
 
         <ImageView
             android:id="@+id/bodyBottom"
@@ -128,7 +128,7 @@
             app:layout_constraintHeight_percent="0.2"
             app:layout_constraintStart_toEndOf="@+id/sleeveRightBottom"
             app:layout_constraintTop_toBottomOf="@+id/body"
-            app:layout_constraintWidth_percent="0.5"></ImageView>
+            app:layout_constraintWidth_percent="0.5"/>
 
         <ImageView
             android:id="@+id/sleeveLeftBottom"
@@ -139,7 +139,7 @@
             app:layout_constraintHeight_percent="0.2"
             app:layout_constraintStart_toEndOf="@+id/bodyBottom"
             app:layout_constraintTop_toBottomOf="@+id/sleeveRight"
-            app:layout_constraintWidth_percent="0.25"></ImageView>
+            app:layout_constraintWidth_percent="0.25"/>
 
         <ImageView
             android:id="@+id/pocket"
@@ -153,7 +153,20 @@
             app:layout_constraintEnd_toEndOf="@+id/body"
             app:layout_constraintHeight_percent="0.2"
             app:layout_constraintStart_toStartOf="@+id/body"
-            app:layout_constraintWidth_percent="0.30"></ImageView>
+            app:layout_constraintWidth_percent="0.30"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/pocket_small"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/smallpocket"
+            app:layout_constraintEnd_toEndOf="@+id/body"
+            app:layout_constraintHeight_percent="0.25"
+            app:layout_constraintTop_toBottomOf="@+id/hoodLeft"
+            app:layout_constraintWidth_percent="0.25"
+            android:visibility="gone"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -165,8 +178,8 @@
         android:layout_height="50dp"
         android:layout_margin="4dp"
         android:src="@drawable/clear_btn"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></ImageView>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/save_btn"/>
 
     <ImageView
         android:id="@+id/save_btn"
@@ -175,7 +188,48 @@
         android:layout_margin="8dp"
         android:src="@drawable/save_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></ImageView>
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <ImageView
+        android:id="@+id/pocket_big_btn"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/ic_big_pocket"
+        android:layout_margin="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/pocket_big_ok"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_ok"
+        android:layout_margin="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/pocket_small_btn"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/ic_small_pocket"
+        android:layout_margin="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pocket_big_btn" />
+
+    <ImageView
+        android:id="@+id/pocket_small_ok"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_ok_small"
+        android:layout_margin="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pocket_big_btn"
+        android:visibility="gone"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/buttons_recycler_view"

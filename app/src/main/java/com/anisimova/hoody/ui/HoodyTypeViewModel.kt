@@ -11,6 +11,8 @@ import android.provider.MediaStore
 import android.view.View
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.drawToBitmap
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.anisimova.hoody.ImagePart
 import java.io.File
@@ -21,6 +23,12 @@ class HoodyTypeViewModel : ViewModel() {
 
     private lateinit var partList: MutableList<View>
     lateinit var bitmap: Bitmap
+
+    private val _isBigPocketShow: MutableLiveData<Boolean> = MutableLiveData(false)
+    val isBigPocketShow: LiveData<Boolean> = _isBigPocketShow
+
+    private val _isSmallPocketShow: MutableLiveData<Boolean> = MutableLiveData(false)
+    val isSmallPocketShow: LiveData<Boolean> = _isSmallPocketShow
 
     var colorMatrixWhite = floatArrayOf(
             1f, 0f, 0f, 0f, 0f,
@@ -124,5 +132,13 @@ class HoodyTypeViewModel : ViewModel() {
                 }
             }
         }
+
+    fun showBigPocket() {
+        _isBigPocketShow.postValue(!isBigPocketShow.value!!)
+    }
+
+    fun showSmallPocket() {
+        _isSmallPocketShow.postValue(!isSmallPocketShow.value!!)
+    }
 
     }

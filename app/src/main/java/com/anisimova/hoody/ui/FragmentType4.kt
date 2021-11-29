@@ -5,12 +5,14 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -21,14 +23,23 @@ class FragmentType4 : Fragment(), Callbacks {
     private lateinit var hoodRight: ImageView
     private lateinit var hoodLeft: ImageView
     private lateinit var sleeveRight: ImageView
+    private lateinit var sleeveRightTop: ImageView
     private lateinit var body: ImageView
+    private lateinit var bodyBottom: ImageView
+    private lateinit var bodyLine: ImageView
     private lateinit var sleeveLeft: ImageView
+    private lateinit var sleeveLeftTop: ImageView
     private lateinit var bottomSleeveRight: ImageView
     private lateinit var bottomBody: ImageView
     private lateinit var bottomSleeveLeft: ImageView
     private lateinit var pocket: ImageView
+    private lateinit var pocketSmall: ImageView
     private lateinit var clearButton: ImageView
     private lateinit var saveButton: ImageView
+    private lateinit var bigPocketShow: ImageView
+    private lateinit var smallPocketShow: ImageView
+    private lateinit var bigOk: ImageView
+    private lateinit var smallOk: ImageView
     lateinit var fullHoody: ConstraintLayout
     private lateinit var paletteRecyclerView: RecyclerView
 
@@ -70,22 +81,32 @@ class FragmentType4 : Fragment(), Callbacks {
         hoodRight = view.findViewById(R.id.hoodRight)
         hoodLeft = view.findViewById(R.id.hoodLeft)
         sleeveRight= view.findViewById(R.id.sleeveRight)
+        sleeveRightTop = view.findViewById(R.id.sleeveRightTop)
         body = view.findViewById(R.id.body)
+        bodyBottom = view.findViewById(R.id.body_bottom)
+        bodyLine = view.findViewById(R.id.bodyLine)
         sleeveLeft = view.findViewById(R.id.sleeveLeft)
+        sleeveLeftTop = view.findViewById(R.id.sleeveLeftTop)
         bottomSleeveRight = view.findViewById(R.id.sleeveRightBottom)
         bottomBody = view.findViewById(R.id.bodyBottom)
         bottomSleeveLeft = view.findViewById(R.id.sleeveLeftBottom)
         pocket = view.findViewById(R.id.pocket)
+        pocketSmall = view.findViewById(R.id.pocket_small)
         var partList: MutableList<View> = mutableListOf(
             hoodRight,
             hoodLeft,
             sleeveRight,
+            sleeveRightTop,
             sleeveLeft,
+            sleeveLeftTop,
             body,
+            bodyBottom,
+            bodyLine,
             bottomSleeveRight,
             bottomSleeveLeft,
             bottomBody,
-            pocket)
+            pocket,
+            pocketSmall)
         viewModel.loadParts(partList)
 
         //работа кнопки очистить
@@ -97,6 +118,43 @@ class FragmentType4 : Fragment(), Callbacks {
         //работа кнопки сохранить
         saveButton = view.findViewById(R.id.save_btn)
         fullHoody = view.findViewById<ConstraintLayout>(R.id.layout_image)
+
+        //работа кнопок - добавления карманов
+        bigPocketShow = view.findViewById(R.id.pocket_big_btn)
+        bigOk = view.findViewById(R.id.pocket_big_ok)
+        bigPocketShow.setOnClickListener {
+            viewModel.showBigPocket()
+        }
+
+        smallOk = view.findViewById(R.id.pocket_small_ok)
+        smallPocketShow = view.findViewById(R.id.pocket_small_btn)
+        smallPocketShow.setOnClickListener {
+            viewModel.showSmallPocket()
+        }
+
+        viewModel.isBigPocketShow.observe(viewLifecycleOwner, Observer {
+            if(it) {
+                pocket.visibility = View.VISIBLE
+                bigOk.visibility = View.VISIBLE
+            }
+            if (!it) {
+                pocket.visibility = View.GONE
+                bigOk.visibility = View.GONE
+            }
+        })
+
+        viewModel.isSmallPocketShow.observe(viewLifecycleOwner, Observer {
+            if(it) {
+                pocketSmall.visibility = View.VISIBLE
+                smallOk.visibility = View.VISIBLE
+            }
+            if (!it) {
+                pocketSmall.visibility = View.GONE
+                smallOk.visibility = View.GONE
+            }
+        })
+
+
 
         saveButton.setOnClickListener {
             //запрос разрешения

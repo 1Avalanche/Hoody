@@ -48,7 +48,7 @@ class FragmentType7 : Fragment(), Callbacks {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_type7, container, false)
+        val view = inflater.inflate(R.layout.fragment_type1, container, false)
         paletteRecyclerView = view.findViewById(R.id.buttons_recycler_view)
         paletteRecyclerView.layoutManager = GridLayoutManager(context, 3, RecyclerView.HORIZONTAL, false)
         val adapter = PaletteButtonAdapter(this)
